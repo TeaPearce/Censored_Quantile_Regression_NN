@@ -1,0 +1,1 @@
+docker build --build-arg UID=$UID -t cqrnn:1.0 .
