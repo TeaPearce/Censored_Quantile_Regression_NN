@@ -3,11 +3,6 @@ Code from NeurIPS 2022 paper 'Censored Quantile Regression Neural Networks for D
 
 <img height="100" src="overview_01.png">
 
-
-
-
-
-
 ## Code Description
 
 Brief overview of each script's purpose.
@@ -24,13 +19,14 @@ Brief overview of each script's purpose.
     : Main experimental script to fire everything from.
 - ```01_code/utils.py```
     : Specify paths, plotting functions, metric functions etc.
-
 - ```02_datasets/```
     : We provide raw datafiles for the smaller type 3 datasets. Type 2 datasets are downloaded in the scripts via openML. Type 1 datasets are generated on the fly. SurvMNIST downloads MNIST via torchvision -- there may be compatibility issues with this (see later).
 - ```03_results/```
     : Empty directory to save output results.
 - ```04_plots/```
     : Empty directory to save output graphs.
+- ```docker_build.sh```, ```docker_run.sh```, ```Dockerfile```, ```requirements.txt```
+    : Useful if you'd like to run our code from a docker container. Run ```bash docker_build.sh``` then ```bash docker_run.sh```. In general the requirements shouldn't be too strict for more recent package versions -- the exception is when downloading SurvMNIST, which does require ```torchvision==0.9.1```. 
 
 ## Running
 
@@ -44,12 +40,14 @@ To generate 1D graphs (Figure 1 of paper), set ```is_show_input_graph=True``` an
 
 TODO
 
-## Compatibility
-
-Docker nonsense
-
 
 ## Citation
-
-TODO
+```
+@inproceedings{PearceCQRNN2022,
+  author = {Tim Pearce and Jong-Hyeon Jeong and yichen jia and Jun Zhu},
+  title = {Censored Quantile Regression Neural Networks for Distribution-Free Survival Analysis},
+  booktitle = {Advances in Neural Information Processing Systems, NeurIPS},
+  year = {2022}
+}
+```
 
