@@ -7,6 +7,8 @@ Code from NeurIPS 2022 paper 'Censored Quantile Regression Neural Networks for D
 
 Brief overview of each script's purpose.
 
+- ```mini_cqrnn.ipynb```
+    : Self-contained ipython notebook of CQRNN on 1D function.
 - ```01_code/algorithms.py```
     : Training loop for models.
 - ```01_code/datasets.py```
@@ -28,6 +30,7 @@ Brief overview of each script's purpose.
 - ```docker_build.sh```, ```docker_run.sh```, ```Dockerfile```, ```requirements.txt```
     : Useful to run our code from a docker container, if you're into that sort of thing. Run ```bash docker_build.sh``` then ```bash docker_run.sh```. In general the requirements shouldn't be too strict for more recent package versions -- the exception is when downloading SurvMNIST, which does require ```torchvision==0.9.1```. 
 
+
 ## Running
 
 We recommend running code from the directory ```/01_code/```, i.e. then simply run ```python3 script_exp.py```.
@@ -36,9 +39,10 @@ Edit the script ``` script_exp.py``` directly for different combinations of expe
 
 To generate 1D graphs (Figure 1 of paper), set ```is_show_input_graph=True``` and ```is_save_input_graph=True``` and ```n_runs=1```. Plotting only works on type 1 datasets. Plots will be saved to ```/04_plots/```.
 
+
 ## Minimalist Implementation
 
-TODO
+Don't want to crawl through the full code base? We got you. ```mini_cqrnn.ipynb``` is a self-contained script that trains and visualises CQRNN on a 1D function. Contains both an optimised and non-optimised (but readable) version of the CQRNN loss.
 
 
 ## Citation
