@@ -44,7 +44,7 @@ TODO
 ## Citation
 ```
 @inproceedings{PearceCQRNN2022,
-  author = {Tim Pearce and Jong-Hyeon Jeong and yichen jia and Jun Zhu},
+  author = {Tim Pearce and Jong-Hyeon Jeong and Yichen Jia and Jun Zhu},
   title = {Censored Quantile Regression Neural Networks for Distribution-Free Survival Analysis},
   booktitle = {Advances in Neural Information Processing Systems, NeurIPS},
   year = {2022}
