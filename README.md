@@ -26,7 +26,7 @@ Brief overview of each script's purpose.
 - ```04_plots/```
     : Empty directory to save output graphs.
 - ```docker_build.sh```, ```docker_run.sh```, ```Dockerfile```, ```requirements.txt```
-    : Useful if you'd like to run our code from a docker container. Run ```bash docker_build.sh``` then ```bash docker_run.sh```. In general the requirements shouldn't be too strict for more recent package versions -- the exception is when downloading SurvMNIST, which does require ```torchvision==0.9.1```. 
+    : Useful to run our code from a docker container, if you're into that sort of thing. Run ```bash docker_build.sh``` then ```bash docker_run.sh```. In general the requirements shouldn't be too strict for more recent package versions -- the exception is when downloading SurvMNIST, which does require ```torchvision==0.9.1```. 
 
 ## Running
 
